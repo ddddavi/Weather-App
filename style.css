@@ -1,0 +1,185 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #282828;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#titolo {
+    font-size: 6rem;
+    letter-spacing: -4px;
+    padding: 20px;
+}
+
+#cloud-icon {
+    margin-left: 20px;
+}
+
+
+#search-bar {
+    font-size: 3rem;
+    padding: 30px;
+    background-color: #212426;
+    margin: 30px;
+    width: 70%;
+    color: azure;
+    border: 4px solid #212121;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+#search-bar::placeholder {
+    color: azure;
+}
+
+#search-bar:focus, #search-bar:hover{
+    background-color: #282828;
+    transition: 0.5s;
+}
+
+#search-btn {
+    background-color: black;
+    border: transparent;
+    border-radius: 10px;
+    color: azure;
+    padding: 20px;
+    margin: 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#search-icon {
+    margin-left: 15px;
+}
+
+#search-btn:hover {
+    scale: 1.05;
+    background-color: #212426;
+}
+
+.details-box {
+    height: 820px;
+    width: 800px;
+    padding: 20px;
+    margin: 30px;
+    background-color: #212426;
+    border: 4px solid #212121;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+.img-container {
+    width: 100%;
+    height: 500px;
+}
+
+.img-details {
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.text-details {
+    display: block;
+    margin: auto;
+}
+
+.text-details h4 {
+    font-size: 3rem;
+    display: block;
+    width: fit-content;
+}
+
+.not-found {
+    font-size: 3rem;
+    height: 150px;
+    width: 1000px;
+    text-align: center;
+    padding: 20px;
+    margin: 30px;
+    background-color: #212426;
+    border: 4px solid #212121;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 480px) {
+
+    #titolo {
+        font-size: 3.5rem;
+        letter-spacing: -1px;
+    }
+
+    #search-bar {
+        padding: 6px;
+        font-size: 2rem;
+    }
+
+    #search-btn {
+        padding: 10px 10px;
+        font-size: 2rem;
+        scale: none;
+    }
+
+    #search-btn:hover {
+        background-color: black;
+        scale: 1;
+    }
+
+    #search-icon {
+        margin-left: 8px;
+    }
+
+    .details-box {
+        width: 80%;
+        height: 300px;
+    }
+
+    .img-container {
+        display: block;
+        margin: auto;
+    }
+
+    .img-details {
+        width: 250px;
+        height: 185px;
+        display: block;
+        margin: auto;
+    }
+
+    .text-details {
+        display: block;
+        margin: auto;
+        height: 50px;
+    }
+    
+    .text-details h4 {
+        font-size: 1.2rem;
+        display: block;
+        width: fit-content;
+    }
+
+
+    .not-found {
+        width: 300px;
+        height: 70px;
+        font-size: 0.8rem;
+    }
+}
+
+
+
+

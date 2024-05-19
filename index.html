@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/315d842ca4.js" crossorigin="anonymous"></script>
+    <title>Meteo</title>
+</head>
+<body>
+    
+    <h1 id="titolo">Meteo<i id="cloud-icon" class="fa-solid fa-cloud"></i></h1>
+
+    <input id="search-bar" type="text" autocomplete="off" placeholder="Scrivi una città...">
+
+    <button id="search-btn">Cerca città<i id="search-icon" class="fa-solid fa-magnifying-glass"></i></button>
+
+
+    <div class="details-box">
+        <div class="img-container">
+            <img class="img-details">
+        </div>
+        <div class="text-details">
+            <h4>Temperatura: °C</h4>
+            <h4>Velocità vento: km/h</h4>
+        </div>
+    </div>
+
+    <div class="not-found">
+        <h2>Error 404: not found</h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
